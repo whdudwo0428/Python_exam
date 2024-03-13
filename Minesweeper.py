@@ -47,6 +47,8 @@ for i in range(length):
 
 # 결과 확인, mine_map 출력
 for row in mine_map :
-    print(' '.join(str(cell) for cell in row))
+   print(' '.join(str(cell) for cell in row))
+
+    #print(mine_map) 이건 뭐 어떻게 나오는거죠 ㅠ
 
     #print(arr.count(1))    #나중에 지뢰 몇개인지 설정하는거 만들고싶어서 1개수 카운트
