@@ -3,9 +3,11 @@ print("Game Setting")
 width,length = map(int,input("Enter Width,Length : ").split())
 
 print("Enter mine map (0: no mine, 1: mine)")
-
+col = 4
+row = 4;
 # 공행렬 만들기(결과가 되는 행렬) / arr이 직관적이지 않아 이름 바꿨습니다.
-mine_map = []
+mine_map = []   #arr = [[0 for y in range(col)] for x in range(row)]
+arr = [[0 for y in range(col)] for x in range(row)]
 '''
 for y in range(length) : # length 세로길이 만큼 반복
         mine = input(":")    # 각 행의 지뢰를 0 또는 1로 입력 받으기 ex)'0' '1' '1' '0' 입력
@@ -14,6 +16,7 @@ for y in range(length) : # length 세로길이 만큼 반복
 '''
 #각 행의 지뢰를 0 또는 1로 입력 하면 mine_map 공행렬에 추가 ex)'0' '1' '1' '0' 입력 - [ 0 1 1 0 ]
 mine_map = [list(map(int, input(":").split())) for y in range(length)]
+
 
 # 앞에 받은 mine_map리스트 중 요소 1을 *로 대체함
 for i in range(len(mine_map)):
@@ -49,6 +52,6 @@ for i in range(length):
 for row in mine_map :
    print(' '.join(str(cell) for cell in row))
 
-    #print(mine_map) 이건 뭐 어떻게 나오는거죠 ㅠ
+print(mine_map) #이건 뭐 어떻게 나오는거죠 ㅠ
 
     #print(arr.count(1))    #나중에 지뢰 몇개인지 설정하는거 만들고싶어서 1개수 카운트
