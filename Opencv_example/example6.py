@@ -1,7 +1,7 @@
 import numpy as np
 import cv2
 
-capture = cv2.VideoCapture("../video_file.avi")  #확장자비디코 코덱을 분석해서 불러오는 역할
+capture = cv2.VideoCapture("../image/video_file.avi")  #확장자비디코 코덱을 분석해서 불러오는 역할
 '''
 파일을 열때 상대경로와 절대경로가 있다
 ../~~  내 디렉토리보다 위에 있을경우

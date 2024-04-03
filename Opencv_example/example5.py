@@ -2,7 +2,7 @@ import numpy as np
 import cv2
 
 title1 = "imread Test"
-image = cv2.imread('../read_color.jpg') #imread 이미지읽어올때 사용
+image = cv2.imread('../image/read_color.jpg') #imread 이미지읽어올때 사용
 if image is None: 
     print("파일 읽기 오류")
 #3은 채널을 의미함
